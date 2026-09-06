@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+logs/
+walmart_project/target/
+walmart_project/dbt_packages/
+walmart_project/logs/
+walmart_project/.user.yml

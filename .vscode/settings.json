@@ -1,0 +1,8 @@
+{
+    "dbt.perspectiveTheme": "Monokai",
+    "dbt.dbtMajorVersion": "v1",
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+
+  "python.envFile": "${workspaceFolder}/walmart_project/.env"
+
+}

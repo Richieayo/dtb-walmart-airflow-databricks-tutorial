@@ -1,0 +1,11 @@
+snapshots:
+  - name: dim_stores
+    description: "Snapshot of the dim_stores table"
+    relation: ref('eph_stores')
+    config:
+      schema: gold
+      database: walmart
+      unique_key: store_id
+      strategy: timestamp
+      updated_at: store_updated_timestamp
+      dbt_valid_to_current: "to_date('9999-12-31')"

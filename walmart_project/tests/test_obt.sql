@@ -1,0 +1,15 @@
+{{ config(severity="warn")}}
+
+
+SELECT 1
+FROM 
+    {{ ref('obt_b')}} as obt
+WHERE
+obt.order_id IS NULL
+OR 
+obt.order_item_id IS NULL
+OR
+obt.product_id IS NULL 
+OR obt.employee_id IS NULL
+OR store_id IS NULL
+OR customer_id IS NULL
